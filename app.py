@@ -142,12 +142,14 @@ label[data-testid="stWidgetLabel"] p {
 }
 
 /* Radio */
-[data-testid="stRadio"] label {
+[data-testid="stRadio"] label,
+[data-testid="stRadio"] label p,
+[data-testid="stRadio"] div[data-testid="stMarkdownContainer"] p {
     background: #1e1e1e !important;
     border: 1px solid rgba(255,255,255,0.1) !important;
     border-radius: 8px !important;
     padding: 0.4rem 1.1rem !important;
-    color: rgba(255,255,255,0.6) !important;
+    color: rgba(255,255,255,0.9) !important;
     font-size: 0.9rem !important;
     font-weight: 500 !important;
     text-transform: none !important;
@@ -155,7 +157,8 @@ label[data-testid="stWidgetLabel"] p {
     cursor: pointer !important;
 }
 
-[data-testid="stRadio"] label:has(input:checked) {
+[data-testid="stRadio"] label:has(input:checked),
+[data-testid="stRadio"] label:has(input:checked) p {
     background: rgba(99,179,237,0.15) !important;
     border-color: #63b3ed !important;
     color: #63b3ed !important;
